@@ -1,25 +1,33 @@
 <!DOCTYPE html>
-<html lang="en-US">
+  <html lang="en">
   <head>
     <meta charset="utf-8">
     <title>Alex</title>
-
     <link rel="icon" href="editormd/images/logos/editormd-favicon-64x64.ico">
-
     <link rel="stylesheet" href="editormd/css/editormd.min.css" />
-    <div id="editor">
-        <textarea style="display:none;">### [点击进入我的博客](https://www.lihaonan.cn)</textarea>
-    </div>
+    <style>
+        html,body{
+            height:100%;
+            box-sizing: border-box;
+            margin:0;
+            padding: 0;
+        }
+    </style>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
     <script src="editormd/editormd.min.js"></script>
     <script type="text/javascript">
         $(function() {
             var editor = editormd("editor", {
                 width: "90%",
-                height: "1050",
+                height: "95%",
                 path : "editormd/lib/"
             });
         });
     </script>    
-   
   </head>
+  <body>
+    <div id="editor">
+        <textarea style="display:none;"> ### [点击进入我的博客](https://www.lihaonan.cn)</textarea>
+    </div>
+  </body>
+  </html>
